@@ -21,6 +21,7 @@
     "eslint-plugin-react": "7.33.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-refresh": "0.4.3",
+    "squint-cljs": "0.3.35",
     "vite": "4.5.0"
   }
 }

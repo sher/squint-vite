@@ -1,0 +1,3 @@
+{:tasks
+ {dev (shell "npx squint watch")
+  build (shell "npx squint compile")}}

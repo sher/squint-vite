@@ -1,6 +1,6 @@
 (ns core
   (:require
-   [App]
+   [App :as App]
    ["react-dom/client" :as rdom]))
 
 (def root (rdom/createRoot (js/document.getElementById "root")))

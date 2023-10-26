@@ -1,3 +1,8 @@
 {:tasks
- {dev (shell "npx squint watch")
-  build (shell "npx squint compile")}}
+ {dev:squint (shell "npx squint watch")
+  dev:vite (shell "npx vite")
+  -dev {:depends [dev:squint dev:vite]}
+  dev (run '-dev {:parallel true})
+  build:squint (shell "npx squint compile")
+  build:vite (shell "npx vite build")
+  build {:depends [build:squint build:vite]}}}

@@ -1,4 +1,4 @@
-<img width="628" src="https://github.com/sher/squint-vite/assets/381501/75b662c0-11a7-4c1a-a2bc-bf4d44077cab">
+<img width="525" src="https://github.com/sher/squint-vite/assets/381501/a120e76b-0773-4d2c-970b-14ad220930e7">
 
 # Squint + React + Vite
 

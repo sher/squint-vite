@@ -8,15 +8,15 @@
             ["/vite.svg$default" :as viteLogo]
             ;; react.svg is in the assets folder, use relative path
             ["./assets/react.svg$default" :as reactLogo]
-            ;; nbb.svg is in the assets folder, use relative path
-            ["./assets/nbb.svg$default" :as nbbLogo]))
+            ;; bb.svg is in the assets folder, use relative path
+            ["./assets/bb.svg$default" :as bbLogo]))
 
 (defn Main []
   (let [[count setCount] (useState 0)]
     #jsx [r/Fragment
           [:div
            [:a {:href "https://github.com/squint-cljs/squint" :target "_blank"}
-            [:img {:src nbbLogo :className "logo nbb" :alt "nbb logo"}]]
+            [:img {:src bbLogo :className "logo bb" :alt "bb logo"}]]
            [:a {:href "https://vitejs.dev" :target "_blank"}
             [:img {:src viteLogo :className "logo" :alt "Vite logo"}]]
            [:a {:href "https://react.dev" :target "_blank"}
@@ -30,4 +30,4 @@
             [:code "src-cljs/App.cljs"]
             " and save to test HMR"]]
           [:p {:className "read-the-docs"}
-           "Click on the Squint, Vite and React logos to learn more"]]))
+           "Click on the Babashka, Vite and React logos to learn more"]]))

@@ -1,8 +1,14 @@
 (ns App
   (:require ["react" :as r :refer [useState]]
             ["./App.css"]
+            ;; because image assets are imported as modules,
+            ;; we need to use $default to get the actual image url
+            ;; ---
+            ;; vite.svg is in the public folder, use absolute path
             ["/vite.svg$default" :as viteLogo]
+            ;; react.svg is in the assets folder, use relative path
             ["./assets/react.svg$default" :as reactLogo]
+            ;; nbb.svg is in the assets folder, use relative path
             ["./assets/nbb.svg$default" :as nbbLogo]))
 
 (defn Main []
@@ -24,4 +30,4 @@
             [:code "src-cljs/App.cljs"]
             " and save to test HMR"]]
           [:p {:className "read-the-docs"}
-           "Click on the Vite and React logos to learn more"]]))
+           "Click on the Squint, Vite and React logos to learn more"]]))

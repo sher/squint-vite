@@ -5,4 +5,4 @@
    ["./assets/core.css"]))
 
 (def root (rdom/createRoot (js/document.getElementById "root")))
-(.render root #jsx [App/App])
+(.render root #jsx [App/Main])

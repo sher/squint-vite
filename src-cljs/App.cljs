@@ -1,7 +1,7 @@
 (ns App
   (:require ["react" :refer [useState]]))
 
-(defn App []
+(defn Main []
   #jsx [:div
         (let [[state setState] (useState 0)]
           #jsx [:div "You clicked " state "times!"

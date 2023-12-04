@@ -9,9 +9,12 @@ This template provides a minimal setup to get Squint compiling to React working 
 
 ## Development
 ```sh
+$ git clone https://github.com/sher/squint-vite my-app
+$ cd my-app
+$ npm install
 $ bb dev
 ```
-What this command does is:
+What `bb dev` command does is:
 - compiles every `.cljs` file inside `src-cljs` to `.jsx` and outputs it into `src` folder
 - copies all other files in `src-cljs` to `src` folder keeping the directory structure
 - starts _squint watch_ and _vite dev_ processes with HMR, piping their stdio
